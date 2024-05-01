@@ -15,6 +15,25 @@ const getAccounts:any = async(req, res) => {
     }
 }
 
+const register = async(req, res) => {
+    try {
+        const { email, password, name } = req.body
+
+        console.log({
+            email,
+            password,
+            name
+        })
+
+
+
+
+    } catch(e) {
+        return res.json(e)
+    }
+}
+
 export {
-    getAccounts
+    getAccounts,
+    register
 }
