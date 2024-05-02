@@ -32,6 +32,8 @@ const CreateProfile = () => {
             name: data.name
         })
 
+        console.log(response)
+
         setDataRegister({})
     }
 
